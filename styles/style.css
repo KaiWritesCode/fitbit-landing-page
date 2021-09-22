@@ -778,8 +778,8 @@ label #cancel {
     padding: 100px 20px 10px;
   }
   .options .trackers:hover, .smartwatches:hover {
-    -webkit-transform: scale(1.05) translateX(20px);
-            transform: scale(1.05) translateX(20px);
+    -webkit-transform: scale(1.04) translateX(14px);
+            transform: scale(1.04) translateX(14px);
     -webkit-transition: -webkit-transform .7s ease-out;
     transition: -webkit-transform .7s ease-out;
     transition: transform .7s ease-out;
