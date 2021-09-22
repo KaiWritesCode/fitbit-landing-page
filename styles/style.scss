@@ -1,0 +1,741 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+.hero a {
+    text-decoration: none;
+}
+.arrow-link {
+    color: white;
+    font-size: .8em;
+}
+a {
+    text-decoration: none;
+}
+.fixed {
+position: fixed;
+}
+
+// NAV 
+
+.nav-logo {
+    width: 100%;
+    max-width: 120px;
+    color: white;
+    transform: translateY(20px);
+    z-index: 10000;
+}
+.top-nav {
+    position: sticky;
+    padding: 0 15px;
+    background-color: transparent;
+    height: 80px;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+.nav-active {
+    background-color: rgba(128, 128, 128, 0.7);
+    box-shadow: 5px -1px 12px -5px grey;
+}
+.nav-links {
+    margin: 0;
+    list-style: none;
+    float: right;
+    margin-right: 150px;
+    line-height: 80px;
+}
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-links li a {
+    color: white;
+    position: relative;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+.nav-links li a::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+.nav-links li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+label #bars,
+label #cancel {
+    color: white;
+    font-size: 30px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+.nav-icons {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(20px);
+    margin: 0 20px;
+}
+.nav-icons i {
+    color: white;
+    margin: 0 10px;
+    font-size: 2em;
+}
+.collapse-nav-info {
+    display: none;
+}
+.collapse-nav-info a {
+    color: rgb(150, 150, 150);
+}
+.hamburger {
+    display: none;
+    transform: translate(-15px, 15px);
+    font-size: 2em;
+    position: absolute;
+     top: 0;
+    right: 0;
+    color: white;
+}
+
+
+.top-section {
+    background-image: url(../img/abstract-smooth-dark-blue-with-black-vignette-studio-well-use-as-background-business-report-digital-website-template-backdrop.jpeg);
+    position: relative;
+    background-size: cover;
+
+}
+
+.hero .left-col .fitbits-hero {
+    z-index: 100;
+    width: 100%;
+    margin: 20px 0;
+}
+
+
+.hero .right-col {
+    width: 100%;
+    color: white;
+    margin: 0 auto;
+    padding: 10px 20px 60px;
+}
+.hero .right-col h2 {
+    font-weight: 400;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin: 0;
+}
+.right-col h1 {
+    font-weight: 400;
+    font-size: 2.5em;
+    margin: 15px 0;
+}
+
+
+.options .info {
+    color: #002A38;
+    background-color: white;
+    text-align: center;
+    padding: 10px 15px;
+}
+.options .info h1 {
+    margin: 60px 0 30px;
+}
+.options h2 {
+    margin: 0;
+}
+.options .whats-new {
+    color: #002A38;
+    font-size: 1.3em;
+    margin: 50px 0 30px;
+}
+.options .smartwatches img, .trackers img {
+    width: 100%; 
+    max-width: 350px;
+    text-align: center;
+}
+.options .img-div {
+    display: flex;
+    justify-content: center;
+}
+.options .smartwatches {
+    background-color: #44484F;
+    color: white;
+    padding: 10px 15px;
+}
+.options .smartwatches .arrow-link {
+    color: white;
+    font-size: 1em;
+    padding-bottom: 20px;
+}
+.options .trackers {
+    background-color: #e9e9e9;
+    color: #44484F;
+    padding: 10px 15px;
+}
+.options .trackers .arrow-link {
+    color: #44484F;
+    font-size: 1em;
+    padding-bottom: 20px;
+}
+
+.info .right-col img, .left-col img{
+    width: 100%;
+    display: block;
+    font-size: 0;
+}
+.info .right-col .info-text {
+    background-color: #073026;
+    color: white;
+    padding: 30px 15px;
+}
+.info .right-col .info-text h1 {
+    font-size: 1.5em;
+}
+.info .info-text .arrow-link {
+    color: white;
+    font-size: 1em;
+}
+.info .left-col .info-text {
+    padding: 30px 10px 10px;
+    color:#44484F;
+    font-size: 1em;
+}
+.info .left-col .arrow-link {
+    color: rgb(255, 57, 57);
+    font-size: 1em;
+    padding-bottom: 20px;
+}
+
+
+.fitbit-app {
+    padding: 10px 20px;
+    background-color: rgb(237, 236, 236);
+}
+.fitbit-app .title {
+    text-align: center;
+    color: #44484F;
+}
+.fitbit-app img {
+    width: 100%;
+    max-width: 300px;
+    margin-left: 20px;
+}
+.fitbit-app .list-items {
+    display: none;
+}
+
+
+.footer {
+    padding: 50px 20px;
+    background-color: rgb(199, 199, 199);
+}
+
+// INPUT 
+.footer .form {
+    width: 100%;
+    position: relative;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.footer .form input {
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    border: none;
+    background-color: rgb(199, 199, 199);
+    outline: none;
+}
+.form label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+.content-name {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+.form input:focus + .label-name .content-name, .form input:valid + .label-name .content-name{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #44484F;
+}
+
+.footer .social-media {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.footer .social-media .fa-facebook-f {
+   width: 46px;
+}
+.footer .social-media i {
+     padding: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(56, 56, 94);
+}
+
+.footer h2 {
+    margin-top: 50px;
+}
+
+.accordion {
+    position: relative;
+    margin: 40px 0 20px;
+}
+.accordion .label{
+    position: relative;
+    cursor: pointer;
+    font-size: 1.4em;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.accordion .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+.accordion.active .label::before {
+    content: '-'
+}
+.accordion .content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    overflow-y: hidden;
+    transition: .5s
+}
+.accordion .content a {
+    padding: 8px 0;
+    color: rgb(53, 53, 53);
+}
+.accordion.active .content {
+    height: 150px;
+    padding: 10px;
+}
+.accordion.active .company .content, .accordion.active .health .content {
+    height: 280px;
+    padding: 10px;
+}
+
+
+    // HOVER 
+    .arrow-link:hover {
+        color: rgb(160, 160, 160) !important;
+        transition: all .4s ease-in;
+    }
+   .info .info-text .arrow-link:hover {
+        color: rgb(255, 152, 152) !important;
+        transition: all .4s ease-in;
+    }
+ 
+
+@media (max-width: 1118px) {
+    .nav-logo {
+        top: 20px;
+        left: 8%;
+    }
+}
+@media (max-width: 944px) {
+    .nav-logo {
+        left: 6%;
+        top: 20px;
+        width: 130px;
+    }
+    .nav-links li a {
+        font-size: 17px;
+    }
+}
+@media (max-width: 800px) {
+    label #bars {
+        display: block;
+    }
+    .nav-links {
+        z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(232, 232, 232);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    transition: all .5s;
+    overflow-y: hidden;
+    }
+    .nav-links li {
+        display: block;
+        width: 100%;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .nav-links li a {
+        font-size: 20px;
+        color:rgb(89, 89, 89)
+    }
+    .nav-icons {
+        display: none;
+    }
+
+
+    #check:checked ~ ul {
+        height: 100vh;
+        left: 0;
+    }
+    #check:checked ~ .hero .black-fitbit {
+        display: none;
+    }
+    #check:checked ~ label #bars {
+        display: none;
+    }
+    #check:checked ~ label #cancel {
+        display: block;
+    }
+    #check:checked ~ .nav-links .collapse-nav-info {
+        display: flex;
+        flex-direction: column;
+        bottom: 0;
+        z-index: 100;
+        font-size: 1.3em;
+    }
+
+
+
+  
+}
+@media screen and (min-width: 550px) {
+    .fitbit-app img {
+        margin-left: 5em;
+    }
+}
+@media screen and (min-width: 780px) {
+    .hero .left-col .fitbits-hero {
+        position: absolute;
+        max-width: 600px;
+        margin-left: auto;
+        z-index: 0;
+        right: 0;
+        height: 80%;
+        transform: translateY(-100px)
+    }
+    .hero {
+        padding: 100px 0;
+        position: relative;
+    }
+    .hero .right-col {
+        max-width: 500px;
+        z-index: 100000;
+      left: 0;
+      margin: 0;
+      position: relative;
+    }
+
+    .options {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .options .two-col {
+        display: flex;
+        flex-direction: row;
+    }
+    .options .info {
+        min-width: 100%;
+        flex-basis: 100%;
+    }
+    .options .smartwatches, .trackers {
+        width: 50%;
+        flex-basis: 50%;
+        padding: 10px 30px;
+    }
+    .options .trackers {
+        width: 50%;
+        flex-basis: 50%;
+        padding: 10px 30px;
+    }
+
+    .fitbit-app {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+    .fitbit-app .title {
+        width: 100%;
+        flex-basis: 100%;
+    }
+    .fitbit-app .title h1 {
+        width: 80%;
+        text-align: center;
+        margin: 20px auto;
+        font-size: 2.3em;
+    }
+    .fitbit-app .info h2 {
+        color: #299b9d;
+    }
+    .fitbit-app .app-info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .fitbit-app .app-info .info {
+        flex-basis: 50%;
+        height: 50%;
+        padding: 10px 30px;
+        margin-right: auto;
+        width: 70%;
+        margin-left: 50px;
+    }
+    .fitbit-app .list-items {
+        display: flex;
+        flex-basis: 50%;
+        height: 50%;
+        flex-direction: column;
+        padding-top: 20px;
+
+    }
+    .fitbit-app .list-items a {
+       color: #545860;
+       padding: 10px 0;
+    }
+    .fitbit-app a:hover {
+        color: rgb(152, 152, 152);
+        transition: all .4s ease-out;
+    }
+    .fitbit-app img {
+        margin-left: auto;
+    }
+
+    .footer h3{
+        font-size: 1.5em;
+    }
+    .footer h2 {
+        font-size: 2em;
+    }
+    .footer .form {
+        width: 60%;
+    }
+    .footer .social-media {
+        width: 40%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1040px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 45px 0px;
+    }
+    .footer #input-box {
+        font-size: 18px;
+    }
+    .footer  #follow-us {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+       margin-bottom: 30px;;
+    }
+    .footer #first-list {
+        font-size: 14px;
+        display: flex;
+    }
+    .footer #bottom-list {
+        display: flex;
+        font-size: 14px;
+    }
+    .footer .all-lists {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    .footer .all-lists .accordion.active {
+        margin: 0 50px;
+    }
+    .footer p {
+        display: none;
+    }
+   .footer #follow-us h2 {
+       margin-top: 20px;
+   }
+   .footer .social-media a {
+       padding-right: 15px;
+   }
+
+
+.accordion .label {
+       border-bottom: none;
+       pointer-events: none;
+       height: auto;
+   }
+//  
+   .accordion .label {
+    border: none;
+    pointer-events: none;
+    height: auto;
+   }
+   .accordion .label::before {
+       display: none;
+   }
+.accordion {
+       height: auto;
+       display: block;
+   }
+   .fitbit-app .app-info .info {
+       max-width: 40%;
+   } 
+     .hero .right-col {
+        max-width: 700px;
+        margin-left: 40px;
+    }
+    .top-section .hero .right-col h1 {
+        font-size: 3.4em;
+    }
+    .hero .right-col h2 {
+        font-size: 1.4em;
+    }
+
+    .info .right-col, .left-col {
+        display: flex;
+    }
+    .info .right-col img, .left-col img {
+        width: 60%;
+    }
+    .info .right-col .arrow-link, .left-col .info-text .arrow-link{
+        font-size: 1.4em;
+    }
+    .info .left-col .info-text {
+        padding: 100px 20px 10px;
+    }
+
+    .options .trackers:hover, .smartwatches:hover {
+        transform: scale(1.05) translateX(20px);
+        transition: transform .7s ease-out
+    }
+
+ 
+}
+
+
+
+@media screen and (min-width: 1500px) {
+    .nav-links {
+        font-size: 1.2em;
+    }
+    .top-section .hero .right-col {
+        width: 900px;
+    }
+    .top-section .hero .right-col h1 {
+        font-size: 4em;
+    }
+    .hero .left-col .fitbits-hero {
+        max-width: 1000px;
+        height: auto;
+        transform: translateY(-140px)
+    }
+
+    .options .info  {
+        font-size: 1.3em;
+    }
+    .options .smartwatches img, .trackers img {
+        max-width: 450px;
+    }
+    .options .smartwatches h2, .trackers h2 {
+        font-size: 1.9em;
+    }
+    .options .smartwatches p, .trackers p {
+        font-size: 1.3em;
+    }
+    .options .smartwatches .arrow-link, .trackers .arrow-link {
+        font-size: 1.6em;
+    }
+    .options .trackers .arrow-link {
+        font-size: 1.6em;
+    }
+
+    .info .right-col .info-text {
+        font-size: 1.2em;
+        padding: 140px 30px 0px;
+    }
+    .info .left-col .info-text{
+        font-size: 1.2em;
+        padding: 200px 30px 0px;
+    }
+
+    .fitbit-app .title h1 {
+        width: 60%;
+        font-size: 2.7em;
+        margin-bottom: 50px;
+    }
+    .fitbit-app .title h3 {
+        font-size: 1.6em;
+    }
+    .fitbit-app img {
+        max-width: 400px;
+        height: auto;
+    }
+    .fitbit-app .app-info .info {
+        font-size: 1.3em;
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .footer .all-lists {
+        margin-top: 10px;
+
+    }
+    .footer .all-lists .accordion.active {
+        margin: 0 10px;
+    }
+    .footer #follow-us h2 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
