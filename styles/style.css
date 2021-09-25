@@ -787,7 +787,7 @@ label #cancel {
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1400px) {
   .nav-links {
     font-size: 1.2em;
   }
@@ -795,10 +795,10 @@ label #cancel {
     width: 900px;
   }
   .top-section .hero .right-col h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
   .hero .left-col .fitbits-hero {
-    max-width: 1000px;
+    max-width: 900px;
     height: auto;
     -webkit-transform: translateY(-140px);
             transform: translateY(-140px);
@@ -866,5 +866,13 @@ label #cancel {
     margin-top: 20px;
     margin-bottom: 30px;
   }
+}
+@media screen and (min-width: 1600px) {
+    .top-section .hero .right-col {
+        width: 1000px;
+    }
+    .top-section .hero .right-col h1 {
+        font-size: 4em;
+    }
 }
 /*# sourceMappingURL=style.css.map */
