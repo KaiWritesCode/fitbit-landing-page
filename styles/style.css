@@ -43,7 +43,6 @@ a {
   position: -webkit-sticky;
   position: sticky;
   padding: 0 15px;
-  background-color: transparent;
   height: 80px;
   width: 100%;
   -webkit-transition: 0.3s ease-in-out;
@@ -155,15 +154,9 @@ label #cancel {
 }
 
 .top-section {
-  background-image: url(../img/abstract-smooth-dark-blue-with-black-vignette-studio-well-use-as-background-business-report-digital-website-template-backdrop.jpeg);
-  position: relative;
+  background-image: url(../img/hero-sense-versa-three.jpeg);
   background-size: cover;
-}
-
-.hero .left-col .fitbits-hero {
-  z-index: 100;
-  width: 100%;
-  margin: 20px 0;
+  background-repeat: no-repeat;
 }
 
 .hero .right-col {
@@ -528,17 +521,11 @@ label #cancel {
 
 @media screen and (min-width: 780px) {
   .hero .left-col .fitbits-hero {
-    position: absolute;
-    max-width: 600px;
-    margin-left: auto;
-    z-index: 0;
-    right: 0;
-    height: 80%;
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    display: none;
   }
   .hero {
     padding: 100px 0;
+    padding-bottom: 0;
     position: relative;
   }
   .hero .right-col {
@@ -686,6 +673,13 @@ label #cancel {
             flex-direction: column;
     padding: 30px 45px 0px;
   }
+  .hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding: 100px 0;
+    width: 100%;
+  }
   .footer #input-box {
     font-size: 18px;
   }
@@ -778,8 +772,8 @@ label #cancel {
     padding: 100px 20px 10px;
   }
   .options .trackers:hover, .smartwatches:hover {
-    -webkit-transform: scale(1.04) translateX(14px);
-            transform: scale(1.04) translateX(14px);
+    -webkit-transform: scale(1.05) translateX(20px);
+            transform: scale(1.05) translateX(20px);
     -webkit-transition: -webkit-transform .7s ease-out;
     transition: -webkit-transform .7s ease-out;
     transition: transform .7s ease-out;
@@ -802,6 +796,9 @@ label #cancel {
     height: auto;
     -webkit-transform: translateY(-140px);
             transform: translateY(-140px);
+  }
+  .hero {
+    padding: 150px 0;
   }
   .options .info {
     font-size: 1.3em;
@@ -867,12 +864,13 @@ label #cancel {
     margin-bottom: 30px;
   }
 }
+
 @media screen and (min-width: 1600px) {
-    .top-section .hero .right-col {
-        width: 1000px;
-    }
-    .top-section .hero .right-col h1 {
-        font-size: 4em;
-    }
+  .top-section .hero .right-col {
+    width: 1000px;
+  }
+  .top-section .hero .right-col h1 {
+    font-size: 4em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -37,7 +37,6 @@ position: fixed;
 .top-nav {
     position: sticky;
     padding: 0 15px;
-    background-color: transparent;
     height: 80px;
     width: 100%;
     transition: 0.3s ease-in-out;
@@ -125,18 +124,15 @@ label #cancel {
 
 
 .top-section {
-    background-image: url(../img/abstract-smooth-dark-blue-with-black-vignette-studio-well-use-as-background-business-report-digital-website-template-backdrop.jpeg);
-    position: relative;
+    background-image: url(../img/hero-sense-versa-three.jpeg);
     background-size: cover;
-
+    background-repeat: no-repeat;
 }
 
-.hero .left-col .fitbits-hero {
-    z-index: 100;
-    width: 100%;
-    margin: 20px 0;
-}
 
+.hero {
+
+}
 
 .hero .right-col {
     width: 100%;
@@ -448,17 +444,14 @@ label #cancel {
     }
 }
 @media screen and (min-width: 780px) {
+  
     .hero .left-col .fitbits-hero {
-        position: absolute;
-        max-width: 600px;
-        margin-left: auto;
-        z-index: 0;
-        right: 0;
-        height: 80%;
-        transform: translateY(-100px)
+        display: none;
     }
+
     .hero {
         padding: 100px 0;
+        padding-bottom: 0;
         position: relative;
     }
     .hero .right-col {
@@ -567,6 +560,13 @@ label #cancel {
         flex-direction: column;
         padding: 30px 45px 0px;
     }
+    .hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding: 100px 0;
+    width: 100%;
+}
     .footer #input-box {
         font-size: 18px;
     }
@@ -649,7 +649,7 @@ label #cancel {
     }
 
     .options .trackers:hover, .smartwatches:hover {
-        transform: scale(1.03) translateX(10px);
+        transform: scale(1.05) translateX(20px);
         transition: transform .7s ease-out
     }
 
@@ -673,6 +673,10 @@ label #cancel {
         height: auto;
         transform: translateY(-140px)
     }
+    .hero {
+        padding: 150px 0;
+    }
+
 
     .options .info  {
         font-size: 1.3em;
