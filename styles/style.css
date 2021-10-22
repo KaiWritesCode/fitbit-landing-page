@@ -673,6 +673,9 @@ label #cancel {
             flex-direction: column;
     padding: 30px 45px 0px;
   }
+  .top-section .hero .right-col {
+    width: 500px;
+  }
   .hero {
     background-size: cover;
     background-repeat: no-repeat;
